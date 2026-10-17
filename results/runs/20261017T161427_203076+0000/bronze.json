@@ -1,0 +1,29 @@
+[
+  {
+    "data_files": 1,
+    "records_in_files": 150000,
+    "data_bytes": 291676,
+    "table": "lakehouse.bronze.customer",
+    "rows": 150000,
+    "ddl": "CREATE TABLE lakehouse.bronze.customer (\n   custkey bigint,\n   name varchar,\n   mktsegment varchar\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d916-7f43-8bc7-8f1a554e9771/customer-a2bef3c5020447cca62860dea455fc7c'\n)",
+    "initial_write_ms": 1740
+  },
+  {
+    "data_files": 1,
+    "records_in_files": 1500000,
+    "data_bytes": 6986394,
+    "table": "lakehouse.bronze.orders",
+    "rows": 1500000,
+    "ddl": "CREATE TABLE lakehouse.bronze.orders (\n   orderkey bigint,\n   custkey bigint,\n   orderdate date,\n   shippriority integer\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d916-7f43-8bc7-8f1a554e9771/orders-109d41eeb950496c9364a59192b68b90'\n)",
+    "initial_write_ms": 1514
+  },
+  {
+    "data_files": 2,
+    "records_in_files": 6001215,
+    "data_bytes": 45951247,
+    "table": "lakehouse.bronze.lineitem",
+    "rows": 6001215,
+    "ddl": "CREATE TABLE lakehouse.bronze.lineitem (\n   orderkey bigint,\n   linenumber integer,\n   quantity double,\n   extendedprice double,\n   discount double,\n   shipdate date\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d916-7f43-8bc7-8f1a554e9771/lineitem-d18954b5abad4fafb33ebfde71eacd88'\n)",
+    "initial_write_ms": 7640
+  }
+]

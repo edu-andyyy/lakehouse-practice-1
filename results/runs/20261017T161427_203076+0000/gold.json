@@ -1,0 +1,10 @@
+[
+  {
+    "data_files": 1,
+    "records_in_files": 10,
+    "data_bytes": 841,
+    "table": "lakehouse.gold.shipping_priority",
+    "rows": 10,
+    "ddl": "CREATE TABLE lakehouse.gold.shipping_priority (\n   orderkey bigint,\n   revenue decimal(38, 4),\n   orderdate date,\n   shippriority integer\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d9a9-77c3-8781-662b8de1bc2b/shipping_priority-2f5bca608d064da095ba163b926942c0'\n)"
+  }
+]

@@ -1,0 +1,1026 @@
+[
+  {
+    "format": "ORC",
+    "codec": "SNAPPY",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 10707,
+    "client_wall_ms": 10728.715,
+    "data_bytes": 86963746,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 78420378
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7711280
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 832088
+      }
+    ],
+    "query_ids": [
+      "20261017_161535_00078_bwndb",
+      "20261017_161536_00080_bwndb",
+      "20261017_161537_00082_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 15109,
+    "client_wall_ms": 15145.171,
+    "data_bytes": 53913560,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7640276
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45622059
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 651225
+      }
+    ],
+    "query_ids": [
+      "20261017_161546_00085_bwndb",
+      "20261017_161547_00087_bwndb",
+      "20261017_161551_00089_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "ZSTD",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 8196,
+    "client_wall_ms": 8215.642,
+    "data_bytes": 62577789,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 56071794
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 163140
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6342855
+      }
+    ],
+    "query_ids": [
+      "20261017_161601_00092_bwndb",
+      "20261017_161602_00094_bwndb",
+      "20261017_161603_00096_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "GZIP",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 12024,
+    "client_wall_ms": 12051.371,
+    "data_bytes": 58519874,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 51863380
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 310153
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6346341
+      }
+    ],
+    "query_ids": [
+      "20261017_161610_00099_bwndb",
+      "20261017_161611_00101_bwndb",
+      "20261017_161613_00103_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "SNAPPY",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 7279,
+    "client_wall_ms": 7307.378,
+    "data_bytes": 76369357,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 1383944
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 63090940
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 11894473
+      }
+    ],
+    "query_ids": [
+      "20261017_161622_00106_bwndb",
+      "20261017_161623_00108_bwndb",
+      "20261017_161624_00110_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 7237,
+    "client_wall_ms": 7273.099,
+    "data_bytes": 53276373,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45951942
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7027237
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 297194
+      }
+    ],
+    "query_ids": [
+      "20261017_161630_00113_bwndb",
+      "20261017_161630_00115_bwndb",
+      "20261017_161632_00117_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "NONE",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 7722,
+    "client_wall_ms": 7756.745,
+    "data_bytes": 132930564,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 3963232
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 18248452
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 110718880
+      }
+    ],
+    "query_ids": [
+      "20261017_161637_00120_bwndb",
+      "20261017_161638_00122_bwndb",
+      "20261017_161639_00124_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "NONE",
+    "repeat": 0,
+    "warmup": true,
+    "server_elapsed_ms": 10477,
+    "client_wall_ms": 10513.127,
+    "data_bytes": 178273552,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 2959098
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 9337877
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 165976577
+      }
+    ],
+    "query_ids": [
+      "20261017_161645_00127_bwndb",
+      "20261017_161646_00129_bwndb",
+      "20261017_161647_00131_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "SNAPPY",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 9334,
+    "client_wall_ms": 9356.456,
+    "data_bytes": 76477198,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 1381415
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 63201525
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 11894258
+      }
+    ],
+    "query_ids": [
+      "20261017_161656_00134_bwndb",
+      "20261017_161656_00136_bwndb",
+      "20261017_161658_00138_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "ZSTD",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 8466,
+    "client_wall_ms": 8491.118,
+    "data_bytes": 62581479,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 166972
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6342373
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 56072134
+      }
+    ],
+    "query_ids": [
+      "20261017_161706_00141_bwndb",
+      "20261017_161706_00143_bwndb",
+      "20261017_161708_00145_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "SNAPPY",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 8937,
+    "client_wall_ms": 8962.725,
+    "data_bytes": 86946672,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7693460
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 78421691
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 831521
+      }
+    ],
+    "query_ids": [
+      "20261017_161714_00148_bwndb",
+      "20261017_161715_00150_bwndb",
+      "20261017_161716_00152_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "NONE",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 9271,
+    "client_wall_ms": 9291.512,
+    "data_bytes": 133195576,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 18248452
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 110983892
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 3963232
+      }
+    ],
+    "query_ids": [
+      "20261017_161724_00155_bwndb",
+      "20261017_161724_00157_bwndb",
+      "20261017_161726_00159_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "GZIP",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 11493,
+    "client_wall_ms": 11514.219,
+    "data_bytes": 58372517,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 51720214
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6347599
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 304704
+      }
+    ],
+    "query_ids": [
+      "20261017_161733_00162_bwndb",
+      "20261017_161734_00164_bwndb",
+      "20261017_161735_00166_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "NONE",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 9343,
+    "client_wall_ms": 9363.895,
+    "data_bytes": 178260748,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 2955528
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 165976530
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 9328690
+      }
+    ],
+    "query_ids": [
+      "20261017_161745_00169_bwndb",
+      "20261017_161745_00171_bwndb",
+      "20261017_161747_00173_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 10541,
+    "client_wall_ms": 10564.081,
+    "data_bytes": 53324853,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45999760
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7031326
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 293767
+      }
+    ],
+    "query_ids": [
+      "20261017_161755_00176_bwndb",
+      "20261017_161755_00178_bwndb",
+      "20261017_161757_00180_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "repeat": 1,
+    "warmup": false,
+    "server_elapsed_ms": 14141,
+    "client_wall_ms": 14170.363,
+    "data_bytes": 53817143,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 650326
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45526462
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7640355
+      }
+    ],
+    "query_ids": [
+      "20261017_161805_00183_bwndb",
+      "20261017_161806_00185_bwndb",
+      "20261017_161808_00187_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "NONE",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 11981,
+    "client_wall_ms": 12005.723,
+    "data_bytes": 178280134,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 2964200
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 165976527
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 9339407
+      }
+    ],
+    "query_ids": [
+      "20261017_161820_00190_bwndb",
+      "20261017_161820_00192_bwndb",
+      "20261017_161822_00194_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "NONE",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 14135,
+    "client_wall_ms": 14151.544,
+    "data_bytes": 133456061,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 3963232
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 111244377
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 18248452
+      }
+    ],
+    "query_ids": [
+      "20261017_161832_00197_bwndb",
+      "20261017_161833_00199_bwndb",
+      "20261017_161834_00201_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "SNAPPY",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 14027,
+    "client_wall_ms": 14060.614,
+    "data_bytes": 86944090,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 78422699
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7685419
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 835972
+      }
+    ],
+    "query_ids": [
+      "20261017_161847_00204_bwndb",
+      "20261017_161848_00206_bwndb",
+      "20261017_161850_00208_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "SNAPPY",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 16014,
+    "client_wall_ms": 16052.497,
+    "data_bytes": 76432992,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 1379132
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 63159535
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 11894325
+      }
+    ],
+    "query_ids": [
+      "20261017_161901_00211_bwndb",
+      "20261017_161902_00213_bwndb",
+      "20261017_161904_00215_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 14966,
+    "client_wall_ms": 15004.202,
+    "data_bytes": 53307757,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 299849
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45981858
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7026050
+      }
+    ],
+    "query_ids": [
+      "20261017_161918_00218_bwndb",
+      "20261017_161919_00220_bwndb",
+      "20261017_161922_00222_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "GZIP",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 19400,
+    "client_wall_ms": 19428.073,
+    "data_bytes": 58455595,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 308484
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 51793155
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6353956
+      }
+    ],
+    "query_ids": [
+      "20261017_161933_00225_bwndb",
+      "20261017_161934_00227_bwndb",
+      "20261017_161935_00229_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "ZSTD",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 16594,
+    "client_wall_ms": 16631.709,
+    "data_bytes": 62567042,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6354696
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 56066623
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 145723
+      }
+    ],
+    "query_ids": [
+      "20261017_161953_00232_bwndb",
+      "20261017_161954_00234_bwndb",
+      "20261017_161957_00236_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "repeat": 2,
+    "warmup": false,
+    "server_elapsed_ms": 15021,
+    "client_wall_ms": 15049.984,
+    "data_bytes": 53845303,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7640179
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 650993
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45554131
+      }
+    ],
+    "query_ids": [
+      "20261017_162010_00239_bwndb",
+      "20261017_162011_00241_bwndb",
+      "20261017_162014_00243_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 10406,
+    "client_wall_ms": 10426.906,
+    "data_bytes": 53523169,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 46140370
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7082326
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 300473
+      }
+    ],
+    "query_ids": [
+      "20261017_162025_00246_bwndb",
+      "20261017_162026_00248_bwndb",
+      "20261017_162027_00250_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 13652,
+    "client_wall_ms": 13667.643,
+    "data_bytes": 53774694,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7640461
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 45483030
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 651203
+      }
+    ],
+    "query_ids": [
+      "20261017_162036_00253_bwndb",
+      "20261017_162037_00255_bwndb",
+      "20261017_162039_00257_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "GZIP",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 10981,
+    "client_wall_ms": 11003.663,
+    "data_bytes": 58498361,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6365020
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 51827128
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 306213
+      }
+    ],
+    "query_ids": [
+      "20261017_162050_00260_bwndb",
+      "20261017_162051_00262_bwndb",
+      "20261017_162052_00264_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "ZSTD",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 8935,
+    "client_wall_ms": 8952.93,
+    "data_bytes": 62563840,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 161958
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 56067659
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 6334223
+      }
+    ],
+    "query_ids": [
+      "20261017_162101_00267_bwndb",
+      "20261017_162102_00269_bwndb",
+      "20261017_162103_00271_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "NONE",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 20603,
+    "client_wall_ms": 20626.789,
+    "data_bytes": 178267626,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 2958587
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 9332770
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 165976269
+      }
+    ],
+    "query_ids": [
+      "20261017_162110_00274_bwndb",
+      "20261017_162111_00276_bwndb",
+      "20261017_162113_00278_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "NONE",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 22570,
+    "client_wall_ms": 22616.01,
+    "data_bytes": 133203851,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 110992167
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 3963232
+      },
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 18248452
+      }
+    ],
+    "query_ids": [
+      "20261017_162132_00281_bwndb",
+      "20261017_162133_00283_bwndb",
+      "20261017_162136_00285_bwndb"
+    ]
+  },
+  {
+    "format": "PARQUET",
+    "codec": "SNAPPY",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 79321,
+    "client_wall_ms": 79486.418,
+    "data_bytes": 76390715,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 11894445
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 1381586
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 63114684
+      }
+    ],
+    "query_ids": [
+      "20261017_162155_00288_bwndb",
+      "20261017_162157_00290_bwndb",
+      "20261017_162204_00292_bwndb"
+    ]
+  },
+  {
+    "format": "ORC",
+    "codec": "SNAPPY",
+    "repeat": 3,
+    "warmup": false,
+    "server_elapsed_ms": 37116,
+    "client_wall_ms": 37514.971,
+    "data_bytes": 86941554,
+    "data_files": 4,
+    "tables": [
+      {
+        "table_name": "orders",
+        "data_files": 1,
+        "data_bytes": 7682497
+      },
+      {
+        "table_name": "lineitem",
+        "data_files": 2,
+        "data_bytes": 78419559
+      },
+      {
+        "table_name": "customer",
+        "data_files": 1,
+        "data_bytes": 839498
+      }
+    ],
+    "query_ids": [
+      "20261017_162317_00295_bwndb",
+      "20261017_162326_00297_bwndb",
+      "20261017_162331_00299_bwndb"
+    ]
+  }
+]

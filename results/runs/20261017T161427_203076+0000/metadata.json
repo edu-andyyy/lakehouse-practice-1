@@ -1,0 +1,74 @@
+{
+  "started_at": "2026-10-17T16:14:27.203353+00:00",
+  "status": "complete",
+  "scale": "sf1",
+  "write_repeats": 3,
+  "query_repeats": 5,
+  "seed": 20261017,
+  "matrix": [
+    [
+      "PARQUET",
+      "NONE"
+    ],
+    [
+      "PARQUET",
+      "SNAPPY"
+    ],
+    [
+      "PARQUET",
+      "GZIP"
+    ],
+    [
+      "PARQUET",
+      "ZSTD"
+    ],
+    [
+      "ORC",
+      "NONE"
+    ],
+    [
+      "ORC",
+      "SNAPPY"
+    ],
+    [
+      "ORC",
+      "GZIP"
+    ],
+    [
+      "ORC",
+      "ZSTD"
+    ]
+  ],
+  "completed_stages": [
+    "init",
+    "elt",
+    "benchmark",
+    "iceberg",
+    "bi",
+    "verify"
+  ],
+  "trino_jvm_options": [
+    "-server",
+    "-Xms512M",
+    "-Xmx1536M",
+    "-XX:+UseG1GC",
+    "-XX:G1HeapRegionSize=16M",
+    "-XX:+ExplicitGCInvokesConcurrent",
+    "-XX:+ExitOnOutOfMemoryError",
+    "-XX:-OmitStackTraceInFastThrow",
+    "-XX:ReservedCodeCacheSize=256M",
+    "-Djdk.attach.allowAttachSelf=true",
+    "-Djdk.nio.maxCachedBufferSize=2000000"
+  ],
+  "trino_properties": {
+    "coordinator": "true",
+    "node-scheduler.include-coordinator": "true",
+    "http-server.http.port": "8080",
+    "discovery.uri": "http://localhost:8080",
+    "query.max-memory": "512MB",
+    "query.max-memory-per-node": "512MB",
+    "memory.heap-headroom-per-node": "384MB",
+    "task.concurrency": "2"
+  },
+  "updated_at": "2026-10-17T19:42:19.745430+00:00"
+}

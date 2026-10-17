@@ -1,0 +1,22 @@
+{
+  "customer_duplicate_keys": 0,
+  "orders_duplicate_keys": 0,
+  "lineitem_duplicate_keys": 0,
+  "rejections": [],
+  "normalized_segments": 0,
+  "customer_row_balance": {
+    "bronze": 150000,
+    "accepted": 150000,
+    "rejected": 0
+  },
+  "orders_row_balance": {
+    "bronze": 1500000,
+    "accepted": 1500000,
+    "rejected": 0
+  },
+  "lineitem_row_balance": {
+    "bronze": 6001215,
+    "accepted": 6001215,
+    "rejected": 0
+  }
+}

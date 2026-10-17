@@ -1,0 +1,146 @@
+[
+  {
+    "schema": "bench_parquet_none",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_parquet_none",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_parquet_none",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_parquet_snappy",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_parquet_snappy",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_parquet_snappy",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_parquet_gzip",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_parquet_gzip",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_parquet_gzip",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_parquet_zstd",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_parquet_zstd",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_parquet_zstd",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_orc_none",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_orc_none",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_orc_none",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_orc_snappy",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_orc_snappy",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_orc_snappy",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_orc_gzip",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_orc_gzip",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_orc_gzip",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  },
+  {
+    "schema": "bench_orc_zstd",
+    "table": "customer",
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  {
+    "schema": "bench_orc_zstd",
+    "table": "orders",
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  {
+    "schema": "bench_orc_zstd",
+    "table": "lineitem",
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  }
+]

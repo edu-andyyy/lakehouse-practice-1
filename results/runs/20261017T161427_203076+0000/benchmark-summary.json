@@ -1,0 +1,98 @@
+[
+  {
+    "format": "PARQUET",
+    "codec": "NONE",
+    "size_bytes_median": 133203851,
+    "write_ms_median": 14135,
+    "query_ms_median": 2958,
+    "query_ms_min": 2436,
+    "query_ms_max": 4137,
+    "query_ms_stdev": 690.6651142196195,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "PARQUET",
+    "codec": "SNAPPY",
+    "size_bytes_median": 76432992,
+    "write_ms_median": 16014,
+    "query_ms_median": 3230,
+    "query_ms_min": 2526,
+    "query_ms_max": 4894,
+    "query_ms_stdev": 968.722457672991,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "PARQUET",
+    "codec": "GZIP",
+    "size_bytes_median": 53817143,
+    "write_ms_median": 14141,
+    "query_ms_median": 2901,
+    "query_ms_min": 2513,
+    "query_ms_max": 5375,
+    "query_ms_stdev": 1174.0812578352488,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "PARQUET",
+    "codec": "ZSTD",
+    "size_bytes_median": 53324853,
+    "write_ms_median": 10541,
+    "query_ms_median": 2978,
+    "query_ms_min": 1968,
+    "query_ms_max": 11334,
+    "query_ms_stdev": 4145.824525953794,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "ORC",
+    "codec": "NONE",
+    "size_bytes_median": 178267626,
+    "write_ms_median": 11981,
+    "query_ms_median": 2467,
+    "query_ms_min": 1917,
+    "query_ms_max": 4718,
+    "query_ms_stdev": 1096.5448919218948,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "ORC",
+    "codec": "SNAPPY",
+    "size_bytes_median": 86944090,
+    "write_ms_median": 14027,
+    "query_ms_median": 2268,
+    "query_ms_min": 1841,
+    "query_ms_max": 3448,
+    "query_ms_stdev": 630.0686470536365,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "ORC",
+    "codec": "GZIP",
+    "size_bytes_median": 58455595,
+    "write_ms_median": 11493,
+    "query_ms_median": 3289,
+    "query_ms_min": 2106,
+    "query_ms_max": 4250,
+    "query_ms_stdev": 847.1243710341475,
+    "write_repeats": 3,
+    "query_repeats": 5
+  },
+  {
+    "format": "ORC",
+    "codec": "ZSTD",
+    "size_bytes_median": 62567042,
+    "write_ms_median": 8935,
+    "query_ms_median": 3063,
+    "query_ms_min": 2674,
+    "query_ms_max": 3899,
+    "query_ms_stdev": 479.7043881391956,
+    "write_repeats": 3,
+    "query_repeats": 5
+  }
+]

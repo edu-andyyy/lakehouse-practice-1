@@ -1,0 +1,14 @@
+{
+  "customer": {
+    "rows": 150000,
+    "checksum": "D51138805E17AF91"
+  },
+  "orders": {
+    "rows": 1500000,
+    "checksum": "C4F3EBABDC8E65FC"
+  },
+  "lineitem": {
+    "rows": 6001215,
+    "checksum": "ACE1CD8199EF6994"
+  }
+}

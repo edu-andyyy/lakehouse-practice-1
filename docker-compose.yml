@@ -1,0 +1,133 @@
+name: lakehouse-pr1
+
+x-lakekeeper-env: &lakekeeper-env
+  LAKEKEEPER__PG_DATABASE_URL_READ: postgresql://lakekeeper:lakekeeper@postgres:5432/lakekeeper
+  LAKEKEEPER__PG_DATABASE_URL_WRITE: postgresql://lakekeeper:lakekeeper@postgres:5432/lakekeeper
+  LAKEKEEPER__PG_ENCRYPTION_KEY: local-practice-encryption-key
+  LAKEKEEPER__AUTHZ_BACKEND: allowall
+  RUST_LOG: info
+
+services:
+  postgres:
+    image: postgres:16.10-alpine
+    environment:
+      POSTGRES_USER: lakekeeper
+      POSTGRES_PASSWORD: lakekeeper
+      POSTGRES_DB: lakekeeper
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U lakekeeper -d lakekeeper]
+      interval: 3s
+      timeout: 5s
+      retries: 30
+    mem_limit: 256m
+
+  minio:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - 127.0.0.1:9000:9000
+      - 127.0.0.1:9001:9001
+    volumes:
+      - minio-data:/bitnami/minio/data
+    healthcheck:
+      test: [CMD, curl, --fail, --silent, http://localhost:9000/minio/health/ready]
+      interval: 3s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+    mem_limit: 512m
+
+  minio-init:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: [/bin/sh, -ec]
+    command:
+      - |
+        attempt=0
+        while [ "$$attempt" -lt 60 ]; do
+          if curl --silent --fail --head --connect-timeout 5 --max-time 15 \
+            --aws-sigv4 aws:amz:us-east-1:s3 --user minioadmin:minioadmin \
+            http://minio:9000/lakehouse > /dev/null ||
+            curl --silent --show-error --fail --request PUT --connect-timeout 5 --max-time 15 \
+            --aws-sigv4 aws:amz:us-east-1:s3 --user minioadmin:minioadmin \
+            http://minio:9000/lakehouse; then
+            exit 0
+          fi
+          attempt=$$((attempt + 1))
+          sleep 2
+        done
+        echo 'MinIO bucket initialization failed' >&2
+        exit 1
+    restart: 'no'
+
+  lakekeeper-migrate:
+    image: quay.io/lakekeeper/catalog:v0.10.0
+    command: [migrate]
+    environment: *lakekeeper-env
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: 'no'
+
+  lakekeeper:
+    image: quay.io/lakekeeper/catalog:v0.10.0
+    command: [serve]
+    environment: *lakekeeper-env
+    depends_on:
+      lakekeeper-migrate:
+        condition: service_completed_successfully
+      minio-init:
+        condition: service_completed_successfully
+    ports:
+      - 127.0.0.1:8181:8181
+    healthcheck:
+      test: [CMD, /home/nonroot/lakekeeper, healthcheck]
+      interval: 3s
+      timeout: 10s
+      retries: 40
+      start_period: 10s
+    mem_limit: 384m
+
+  trino:
+    image: trinodb/trino:484
+    depends_on:
+      lakekeeper:
+        condition: service_healthy
+    ports:
+      - 127.0.0.1:8080:8080
+    volumes:
+      - ./trino/config.properties:/etc/trino/config.properties:ro
+      - ./trino/jvm.config:/etc/trino/jvm.config:ro
+      - ./trino/catalog:/etc/trino/catalog:ro
+    healthcheck:
+      test: [CMD, curl, --fail, --silent, http://localhost:8080/v1/info]
+      interval: 5s
+      timeout: 5s
+      retries: 60
+      start_period: 20s
+    mem_limit: 2304m
+    cpus: 4
+
+  metabase:
+    image: metabase/metabase:v0.56.12
+    environment:
+      JAVA_OPTS: -Xms128m -Xmx384m
+      MB_DB_FILE: /metabase-data/metabase.db
+      MB_ANON_TRACKING_ENABLED: 'false'
+      MB_CHECK_FOR_UPDATES: 'false'
+    ports:
+      - 127.0.0.1:3000:3000
+    volumes:
+      - metabase-data:/metabase-data
+    mem_limit: 640m
+
+volumes:
+  postgres-data:
+  minio-data:
+  metabase-data:

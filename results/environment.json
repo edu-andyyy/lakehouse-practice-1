@@ -1,0 +1,110 @@
+{
+  "captured_at": "2026-10-17T16:12:30.830762+00:00",
+  "host_os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "host_arch": "arm64",
+  "python": "3.14.7",
+  "docker_server": "29.7.2",
+  "docker_cpu_count": 8,
+  "docker_memory_bytes": 4106604544,
+  "docker_arch": "aarch64",
+  "images": [
+    {
+      "image_id": "sha256:4a13300e1212df5d8901734474d259074574c9f3513f6d2ce81ca75112002cf5",
+      "repo_digests": [
+        "bitnamilegacy/minio@sha256:4a13300e1212df5d8901734474d259074574c9f3513f6d2ce81ca75112002cf5"
+      ],
+      "architecture": "arm64",
+      "os": "linux"
+    },
+    {
+      "image_id": "sha256:54d1b64cd46a39dfe9b526dba94d589e83cf0d9e856257feb7a330dc51071436",
+      "repo_digests": [
+        "metabase/metabase@sha256:54d1b64cd46a39dfe9b526dba94d589e83cf0d9e856257feb7a330dc51071436"
+      ],
+      "architecture": "arm64",
+      "os": "linux"
+    },
+    {
+      "image_id": "sha256:6262a2e8b299a0f64dfdcc716bc89ab74fcb5eecb07b2375430fc257baf05b16",
+      "repo_digests": [
+        "quay.io/lakekeeper/catalog@sha256:6262a2e8b299a0f64dfdcc716bc89ab74fcb5eecb07b2375430fc257baf05b16"
+      ],
+      "architecture": "arm64",
+      "os": "linux"
+    },
+    {
+      "image_id": "sha256:96c48fdf538fed6a7c475b460de5d14bd2e7c2c9b2455f4e5e2f9d01480f2a29",
+      "repo_digests": [
+        "trinodb/trino@sha256:96c48fdf538fed6a7c475b460de5d14bd2e7c2c9b2455f4e5e2f9d01480f2a29"
+      ],
+      "architecture": "arm64",
+      "os": "linux"
+    },
+    {
+      "image_id": "sha256:b4272b6378692056be05b6b9854446266beee6b41037cdc9bf901fe13f446079",
+      "repo_digests": [
+        "postgres@sha256:b4272b6378692056be05b6b9854446266beee6b41037cdc9bf901fe13f446079"
+      ],
+      "architecture": "arm64",
+      "os": "linux"
+    }
+  ],
+  "containers": [
+    {
+      "service": "lakekeeper",
+      "image": "quay.io/lakekeeper/catalog:v0.10.0",
+      "image_id": "sha256:6262a2e8b299a0f64dfdcc716bc89ab74fcb5eecb07b2375430fc257baf05b16",
+      "memory_limit_bytes": 402653184,
+      "nano_cpus": 0,
+      "state": "running"
+    },
+    {
+      "service": "lakekeeper-migrate",
+      "image": "quay.io/lakekeeper/catalog:v0.10.0",
+      "image_id": "sha256:6262a2e8b299a0f64dfdcc716bc89ab74fcb5eecb07b2375430fc257baf05b16",
+      "memory_limit_bytes": 0,
+      "nano_cpus": 0,
+      "state": "exited"
+    },
+    {
+      "service": "metabase",
+      "image": "metabase/metabase:v0.56.12",
+      "image_id": "sha256:54d1b64cd46a39dfe9b526dba94d589e83cf0d9e856257feb7a330dc51071436",
+      "memory_limit_bytes": 671088640,
+      "nano_cpus": 0,
+      "state": "running"
+    },
+    {
+      "service": "minio",
+      "image": "bitnamilegacy/minio:2025.7.23-debian-12-r5",
+      "image_id": "sha256:4a13300e1212df5d8901734474d259074574c9f3513f6d2ce81ca75112002cf5",
+      "memory_limit_bytes": 536870912,
+      "nano_cpus": 0,
+      "state": "running"
+    },
+    {
+      "service": "minio-init",
+      "image": "bitnamilegacy/minio:2025.7.23-debian-12-r5",
+      "image_id": "sha256:4a13300e1212df5d8901734474d259074574c9f3513f6d2ce81ca75112002cf5",
+      "memory_limit_bytes": 0,
+      "nano_cpus": 0,
+      "state": "exited"
+    },
+    {
+      "service": "postgres",
+      "image": "postgres:16.10-alpine",
+      "image_id": "sha256:b4272b6378692056be05b6b9854446266beee6b41037cdc9bf901fe13f446079",
+      "memory_limit_bytes": 268435456,
+      "nano_cpus": 0,
+      "state": "running"
+    },
+    {
+      "service": "trino",
+      "image": "trinodb/trino:484",
+      "image_id": "sha256:96c48fdf538fed6a7c475b460de5d14bd2e7c2c9b2455f4e5e2f9d01480f2a29",
+      "memory_limit_bytes": 2415919104,
+      "nano_cpus": 4000000000,
+      "state": "running"
+    }
+  ]
+}

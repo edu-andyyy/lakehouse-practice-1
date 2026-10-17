@@ -1,0 +1,42 @@
+[
+  {
+    "data_files": 1,
+    "records_in_files": 150000,
+    "data_bytes": 293767,
+    "table": "lakehouse.silver.customer",
+    "rows": 150000,
+    "ddl": "CREATE TABLE lakehouse.silver.customer (\n   custkey bigint,\n   name varchar,\n   mktsegment varchar\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d983-7673-8da8-fd1acc63bbdc/customer-4198a44dccdb424088b876821a970a76'\n)"
+  },
+  {
+    "data_files": 1,
+    "records_in_files": 1500000,
+    "data_bytes": 7007436,
+    "table": "lakehouse.silver.orders",
+    "rows": 1500000,
+    "ddl": "CREATE TABLE lakehouse.silver.orders (\n   orderkey bigint,\n   custkey bigint,\n   orderdate date,\n   shippriority integer\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d983-7673-8da8-fd1acc63bbdc/orders-3dbcefd3e8184cfe9b575e82f9435a81'\n)"
+  },
+  {
+    "data_files": 2,
+    "records_in_files": 6001215,
+    "data_bytes": 41194996,
+    "table": "lakehouse.silver.lineitem",
+    "rows": 6001215,
+    "ddl": "CREATE TABLE lakehouse.silver.lineitem (\n   orderkey bigint,\n   linenumber integer,\n   quantity decimal(12, 2),\n   extendedprice decimal(15, 2),\n   discount decimal(4, 2),\n   shipdate date\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d983-7673-8da8-fd1acc63bbdc/lineitem-1fdcb23cd55b4c4a82884997702589f9'\n)"
+  },
+  {
+    "data_files": 1,
+    "records_in_files": 30519,
+    "data_bytes": 588050,
+    "table": "lakehouse.silver.shipping_lines",
+    "rows": 30519,
+    "ddl": "CREATE TABLE lakehouse.silver.shipping_lines (\n   orderkey bigint,\n   linenumber integer,\n   custkey bigint,\n   customer_name varchar,\n   mktsegment varchar,\n   orderdate date,\n   shippriority integer,\n   shipdate date,\n   quantity decimal(12, 2),\n   extendedprice decimal(15, 2),\n   discount decimal(4, 2),\n   net_revenue decimal(20, 4),\n   order_year bigint,\n   days_to_ship bigint\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d983-7673-8da8-fd1acc63bbdc/shipping_lines-21880911689a4ef5931aab5570bc070d'\n)"
+  },
+  {
+    "data_files": 0,
+    "records_in_files": 0,
+    "data_bytes": 0,
+    "table": "lakehouse.silver.rejected_records",
+    "rows": 0,
+    "ddl": "CREATE TABLE lakehouse.silver.rejected_records (\n   source_table varchar,\n   record_key varchar,\n   rejection_reason varchar\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d983-7673-8da8-fd1acc63bbdc/rejected_records-700fbe6fe27f45a28689c90cf4ad49be'\n)"
+  }
+]

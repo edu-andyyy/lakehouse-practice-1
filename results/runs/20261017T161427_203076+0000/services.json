@@ -1,0 +1,30 @@
+{
+  "trino": {
+    "nodeId": "f558a1a51955",
+    "state": "ACTIVE",
+    "nodeVersion": {
+      "version": "484"
+    },
+    "environment": "docker",
+    "coordinator": true,
+    "coordinatorId": "bwndb",
+    "starting": false,
+    "uptime": "2.01m"
+  },
+  "lakekeeper": {
+    "version": "0.10.0",
+    "bootstrapped": true,
+    "server-id": "01a14a8a-09c1-73a2-9d82-9ca565f31e98",
+    "default-project-id": "00000000-0000-0000-0000-000000000000",
+    "authz-backend": "allow-all",
+    "aws-system-identities-enabled": false,
+    "azure-system-identities-enabled": false,
+    "gcp-system-identities-enabled": false,
+    "queues": [
+      "tabular_expiration",
+      "tabular_purge"
+    ]
+  },
+  "warehouse_id": "907b3de2-ca43-11f1-9a22-c3da37b6e8b3",
+  "at": "2026-10-17T16:14:27.247197+00:00"
+}

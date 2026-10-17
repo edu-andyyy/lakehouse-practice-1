@@ -1,0 +1,151 @@
+{
+  "at": "2026-10-17T16:56:23.008321+00:00",
+  "database_id": 2,
+  "connection": {
+    "driver": "starburst",
+    "host": "trino",
+    "port": 8080,
+    "catalog": "lakehouse"
+  },
+  "queries": [
+    {
+      "sql": "SELECT count(*) AS row_count FROM lakehouse.bronze.lineitem",
+      "status": "completed",
+      "columns": [
+        "row_count"
+      ],
+      "rows": [
+        [
+          6001215
+        ]
+      ],
+      "running_time_ms": 1387
+    },
+    {
+      "sql": "SELECT year(orderdate) AS order_year, count(*) AS orders_count\nFROM lakehouse.bronze.orders\nGROUP BY 1\nORDER BY 1\n",
+      "status": "completed",
+      "columns": [
+        "order_year",
+        "orders_count"
+      ],
+      "rows": [
+        [
+          1992,
+          227089
+        ],
+        [
+          1993,
+          226645
+        ],
+        [
+          1994,
+          227597
+        ],
+        [
+          1995,
+          228637
+        ],
+        [
+          1996,
+          228626
+        ],
+        [
+          1997,
+          227783
+        ],
+        [
+          1998,
+          133623
+        ]
+      ],
+      "running_time_ms": 680
+    },
+    {
+      "sql": "SELECT * FROM lakehouse.gold.shipping_priority ORDER BY revenue DESC, orderkey",
+      "status": "completed",
+      "columns": [
+        "orderkey",
+        "revenue",
+        "orderdate",
+        "shippriority"
+      ],
+      "rows": [
+        [
+          2456423,
+          406181.0111,
+          "1995-03-05T00:00:00Z",
+          0
+        ],
+        [
+          3459808,
+          405838.6989,
+          "1995-03-04T00:00:00Z",
+          0
+        ],
+        [
+          492164,
+          390324.061,
+          "1995-02-19T00:00:00Z",
+          0
+        ],
+        [
+          1188320,
+          384537.9359,
+          "1995-03-09T00:00:00Z",
+          0
+        ],
+        [
+          2435712,
+          378673.0558,
+          "1995-02-26T00:00:00Z",
+          0
+        ],
+        [
+          4878020,
+          378376.7952,
+          "1995-03-12T00:00:00Z",
+          0
+        ],
+        [
+          5521732,
+          375153.9215,
+          "1995-03-13T00:00:00Z",
+          0
+        ],
+        [
+          2628192,
+          373133.3094,
+          "1995-02-22T00:00:00Z",
+          0
+        ],
+        [
+          993600,
+          371407.4595,
+          "1995-03-05T00:00:00Z",
+          0
+        ],
+        [
+          2300070,
+          367371.1452,
+          "1995-03-13T00:00:00Z",
+          0
+        ]
+      ],
+      "running_time_ms": 476
+    }
+  ],
+  "saved_questions": [
+    {
+      "name": "Bronze — заказы по годам",
+      "id": 38,
+      "url": "http://localhost:3000/question/38"
+    },
+    {
+      "name": "Gold — Q3 Shipping Priority",
+      "id": 39,
+      "url": "http://localhost:3000/question/39"
+    }
+  ],
+  "bronze_lineitem_rows_equal_trino": true,
+  "bronze_year_totals_equal_orders": true
+}

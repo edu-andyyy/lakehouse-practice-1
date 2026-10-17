@@ -1,0 +1,8 @@
+NAME                                 IMAGE                                        COMMAND                  SERVICE              CREATED          STATUS                      PORTS
+lakehouse-pr1-lakekeeper-1           quay.io/lakekeeper/catalog:v0.10.0           "/home/nonroot/lakek…"   lakekeeper           21 seconds ago   Up 12 seconds (healthy)     127.0.0.1:8181->8181/tcp
+lakehouse-pr1-lakekeeper-migrate-1   quay.io/lakekeeper/catalog:v0.10.0           "/home/nonroot/lakek…"   lakekeeper-migrate   27 minutes ago   Exited (0) 16 seconds ago   
+lakehouse-pr1-metabase-1             metabase/metabase:v0.56.12                   "/app/run_metabase.sh"   metabase             21 seconds ago   Up 20 seconds               127.0.0.1:3000->3000/tcp
+lakehouse-pr1-minio-1                bitnamilegacy/minio:2025.7.23-debian-12-r5   "/opt/bitnami/script…"   minio                21 seconds ago   Up 20 seconds (healthy)     127.0.0.1:9000-9001->9000-9001/tcp
+lakehouse-pr1-minio-init-1           bitnamilegacy/minio:2025.7.23-debian-12-r5   "/bin/sh -ec 'attemp…"   minio-init           21 seconds ago   Exited (0) 12 seconds ago   
+lakehouse-pr1-postgres-1             postgres:16.10-alpine                        "docker-entrypoint.s…"   postgres             21 seconds ago   Up 20 seconds (healthy)     5432/tcp
+lakehouse-pr1-trino-1                trinodb/trino:484                            "/usr/lib/trino/bin/…"   trino                20 seconds ago   Up 6 seconds (healthy)      127.0.0.1:8080->8080/tcp

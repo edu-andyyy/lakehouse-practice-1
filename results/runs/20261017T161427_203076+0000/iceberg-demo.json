@@ -1,0 +1,39 @@
+{
+  "before_rows": 30519,
+  "after_delete_rows": 15043,
+  "historical_rows": 30519,
+  "restored_rows": 30519,
+  "snapshot_id": 384267507252458803,
+  "data_files_unchanged_after_schema_evolution": true,
+  "new_column_null_rows": 30519,
+  "renamed_column_sample": [
+    {
+      "orderkey": 577,
+      "discounted_revenue": "42579.1800",
+      "quality_note": null
+    },
+    {
+      "orderkey": 577,
+      "discounted_revenue": "15407.4424",
+      "quality_note": null
+    },
+    {
+      "orderkey": 1281,
+      "discounted_revenue": "43515.7148",
+      "quality_note": null
+    },
+    {
+      "orderkey": 1281,
+      "discounted_revenue": "38595.8400",
+      "quality_note": null
+    },
+    {
+      "orderkey": 1637,
+      "discounted_revenue": "83590.8150",
+      "quality_note": null
+    }
+  ],
+  "before_ddl": "CREATE TABLE lakehouse.sandbox.shipping_lines_demo (\n   orderkey bigint,\n   linenumber integer,\n   custkey bigint,\n   customer_name varchar,\n   mktsegment varchar,\n   orderdate date,\n   shippriority integer,\n   shipdate date,\n   quantity decimal(12, 2),\n   extendedprice decimal(15, 2),\n   discount decimal(4, 2),\n   net_revenue decimal(20, 4),\n   order_year bigint,\n   days_to_ship bigint\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d9d4-7690-87cb-e85137743ae4/shipping_lines_demo-6130e17c47704e3e8fb5d5d2a8e9d0d4'\n)",
+  "after_ddl": "CREATE TABLE lakehouse.sandbox.shipping_lines_demo (\n   orderkey bigint,\n   linenumber integer,\n   custkey bigint,\n   customer_name varchar,\n   mktsegment varchar,\n   orderdate date,\n   shippriority integer,\n   shipdate date,\n   quantity decimal(12, 2),\n   extendedprice decimal(15, 2),\n   discount decimal(4, 2),\n   discounted_revenue decimal(20, 4),\n   order_year bigint,\n   days_to_ship bigint,\n   quality_note varchar\n)\nWITH (\n   compression_codec = 'ZSTD',\n   format = 'PARQUET',\n   format_version = 2,\n   location = 's3://lakehouse/practice1/01a14a95-d9d4-7690-87cb-e85137743ae4/shipping_lines_demo-6130e17c47704e3e8fb5d5d2a8e9d0d4'\n)",
+  "restored_minus_silver": 0
+}

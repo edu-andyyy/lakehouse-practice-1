@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "reference_query_id": "20261017_165636_00566_bwndb",
+  "exact_reference_query_id": "20261017_165703_00569_bwndb",
+  "double_absolute_tolerance": "0.000001",
+  "exact_decimal_comparison": [
+    {
+      "direction": "reference_minus_gold",
+      "differences": 0
+    },
+    {
+      "direction": "gold_minus_reference",
+      "differences": 0
+    }
+  ],
+  "gold_rows": 10
+}

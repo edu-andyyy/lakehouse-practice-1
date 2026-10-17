@@ -1,0 +1,36 @@
+Наблюдения ресурсов во время этого запуска.
+Снимки выполнены отдельно от измеряемого SQL. Это не временной ряд.
+Счётчики vm_stat накоплены с запуска ОС; по ним нельзя определить текущую скорость swap.
+
+Третий раунд записи, docker stats --no-stream:
+NAME                         CPU %     MEM USAGE / LIMIT
+lakehouse-pr1-trino-1        943.99%   2.234GiB / 2.25GiB
+lakehouse-pr1-lakekeeper-1   31.47%    27.33MiB / 384MiB
+lakehouse-pr1-minio-1        127.24%   294MiB / 512MiB
+lakehouse-pr1-metabase-1     31.60%    192.4MiB / 640MiB
+lakehouse-pr1-postgres-1     105.24%   74.07MiB / 256MiB
+
+Во время измеряемых запросов Q3, vm_stat:
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                                     3736.
+Pages active:                                  77772.
+Pages inactive:                                69872.
+Pages speculative:                              7201.
+Pages throttled:                                   0.
+Pages wired down:                             122163.
+Pages purgeable:                                   0.
+"Translation faults":                      218096098.
+Pages copy-on-write:                         3425967.
+Pages zero filled:                          32993901.
+Pages reactivated:                          97539968.
+Pages purged:                                2398126.
+File-backed pages:                             57719.
+Anonymous pages:                               97126.
+Pages stored in compressor:                  1074579.
+Pages occupied by compressor:                 206457.
+Decompressions:                            131342008.
+Compressions:                              136749339.
+Pageins:                                    13223390.
+Pageouts:                                     436396.
+Swapins:                                     2402862.
+Swapouts:                                    2807898.

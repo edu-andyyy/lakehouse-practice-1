@@ -1,0 +1,62 @@
+[
+  {
+    "orderkey": 2456423,
+    "revenue": "406181.0111",
+    "orderdate": "1995-03-05",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 3459808,
+    "revenue": "405838.6989",
+    "orderdate": "1995-03-04",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 492164,
+    "revenue": "390324.0610",
+    "orderdate": "1995-02-19",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 1188320,
+    "revenue": "384537.9359",
+    "orderdate": "1995-03-09",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 2435712,
+    "revenue": "378673.0558",
+    "orderdate": "1995-02-26",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 4878020,
+    "revenue": "378376.7952",
+    "orderdate": "1995-03-12",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 5521732,
+    "revenue": "375153.9215",
+    "orderdate": "1995-03-13",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 2628192,
+    "revenue": "373133.3094",
+    "orderdate": "1995-02-22",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 993600,
+    "revenue": "371407.4595",
+    "orderdate": "1995-03-05",
+    "shippriority": 0
+  },
+  {
+    "orderkey": 2300070,
+    "revenue": "367371.1452",
+    "orderdate": "1995-03-13",
+    "shippriority": 0
+  }
+]

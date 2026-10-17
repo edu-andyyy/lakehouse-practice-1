@@ -1,0 +1,50 @@
+[
+  {
+    "image": "bitnamilegacy/minio:2025.7.23-debian-12-r5",
+    "platform": "linux/arm64",
+    "registry": "registry-1.docker.io",
+    "manifest_digest": "sha256:9b881df5d87c8e158dd3c33b83a274151ade9761eb97b1b43c1dc8cfc5db9371",
+    "config_digest": "sha256:ff0520c437c48ff39e4ecc750ca27aebdd640f644b7240ca1e65bd0e6bcb85e3",
+    "verified_layer_count": 1,
+    "archive_sha256": "045729b894a9dff6dca84719740beb5f1dcb79949bd783c144f770e826e5a8ca",
+    "layer_media_types": [
+      "application/vnd.docker.image.rootfs.diff.tar.gzip"
+    ]
+  },
+  {
+    "image": "postgres:16.10-alpine",
+    "platform": "linux/arm64",
+    "registry": "registry-1.docker.io",
+    "manifest_digest": "sha256:8c01ea8c847ffcc2bf748640891796b98426cb1b45e81be72c57fd81675e3d7d",
+    "config_digest": "sha256:08539ae005a99f7b8d6fc96fbaeb2dad5017717017598948acfce00fbd59f90e",
+    "verified_layer_count": 11,
+    "archive_sha256": "3331756c99a0ad2c82b26d8fc3228f4fc2cf3f5be19fb05d135ddad78c976c29",
+    "layer_media_types": [
+      "application/vnd.oci.image.layer.v1.tar+gzip"
+    ]
+  },
+  {
+    "image": "trinodb/trino:484",
+    "platform": "linux/arm64",
+    "registry": "registry-1.docker.io",
+    "manifest_digest": "sha256:62dc5ad850a11fc95637b0e7aa9da46031145093cb0456cd099c3519298f268c",
+    "config_digest": "sha256:9d35cf4dcb91882024a0dbf4d2f793a620b2dddeb82705063ae18e71233a7003",
+    "verified_layer_count": 34,
+    "archive_sha256": "abd0f787fdf0300e4e9ff4e3acf754eb13226e097873f329bde588d4eca04acd",
+    "layer_media_types": [
+      "application/vnd.docker.image.rootfs.diff.tar.gzip"
+    ]
+  },
+  {
+    "image": "metabase/metabase:v0.56.12",
+    "platform": "linux/arm64",
+    "registry": "registry-1.docker.io",
+    "manifest_digest": "sha256:b05980fc986c7b76ac35c572218c377e58b530ceabe24873b68dc54ca473d845",
+    "config_digest": "sha256:dbdc74f6c4f004a70c63234e003eb8d886e1cc30ef7cf3530909f407d8d030ca",
+    "verified_layer_count": 7,
+    "archive_sha256": "42f668a20a534401d88adeb9ceb514fb269c9e65363580ecb7a3f1f814d83988",
+    "layer_media_types": [
+      "application/vnd.oci.image.layer.v1.tar+gzip"
+    ]
+  }
+]
